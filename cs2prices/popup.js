@@ -1,8 +1,8 @@
 document.getElementById("fetch").addEventListener("click", fetchInventory);
 
 async function fetchInventory() {
-  const steamId = "76561198174435406"; // ใส่ Steam ID ของผู้ใช้
-  const apiKey = "DA488BEFF269E2950EFE5E85D79FCD4E"; // ใส่ API Key ของ Steam
+  const steamId = "**************"; // ใส่ Steam ID ของผู้ใช้
+  const apiKey = "***********************"; // ใส่ API Key ของ Steam
   const inventoryContainer = document.getElementById("inventory");
   inventoryContainer.innerHTML = "Loading...";
 

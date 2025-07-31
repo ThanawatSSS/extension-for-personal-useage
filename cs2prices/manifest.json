@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "CS2 Item Price Checker",
+  "version": "1.0",
+  "description": "เช็คราคาจาก item ใน inventory ของเกม CS2",
+  "permissions": [
+    "https://api.steampowered.com/*",
+    "https://steamcommunity.com/*",
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Check CS2 Prices"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video to MP3</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        width: 250px;
+      }
+      input {
+        width: 100%;
+        padding: 6px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      button {
+        width: 100%;
+        padding: 8px;
+        background: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      button:disabled {
+        background: #a5d6a7;
+        cursor: not-allowed;
+      }
+      .status {
+        font-size: 12px;
+        margin-top: 10px;
+        color: gray;
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Download MP3</h3>
+    <label for="CurrentVideoUrl"> Current Video URL </label>
+    <input id="CurrentVideoUrl" name="videoUrl" type="text" placeholder="URL" />
+    <button id="downloadBtn">Download MP3</button>
+    <label for="CopyVideoUrl"> Copy Video URL </label>
+    <input id="CopyVideoUrl" name="videoUrl" type="text" placeholder="URL" />
+    <button id="CopyDownloadBtn">Download MP3</button>
+    <div class="status" id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
